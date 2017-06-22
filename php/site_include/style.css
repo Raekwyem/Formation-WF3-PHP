@@ -1,0 +1,37 @@
+*{
+	font-family: calibri;
+}
+body {
+	margin: 0;
+}
+.conteneur {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid;
+}
+header {
+	background-color: darkslategray;
+	min-height: 140px;
+}
+nav {
+	background-color: lightslategray;
+	min-height: 30px;
+	text-align: center;
+}
+nav a {
+	display: inline-block;
+	color: white;
+	width: 15%;
+	padding: 5px 0;
+}
+section {
+	min-height: 400px;
+	padding: 20px;
+}
+footer {
+	background-color: darkslategray;
+	min-height: 100px;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
