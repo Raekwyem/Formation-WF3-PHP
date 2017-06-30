@@ -11,6 +11,21 @@ $_SESSION['pseudo'] = "Marie"; // $_SESSION est une superglobale, toutes les sup
 $_SESSION['password'] = "soleil";
 $_SESSION['email'] = 'mail@mail.fr';
 $_SESSION['age'] = 40;
+$_SESSION['adresse']['code postal'] = 75000;
+$_SESSION['adresse']['ville'] = 'Paris';
+$_SESSION['adresse']['adresse'] = 'rue du tertre'
 
 echo 'Premier affichage de la session: <br />';
+echo '<pre>'; print_r($_SESSION); echo '</pre>';
+
+// pour supprimer un élément de la session: unset()
+unset ($_SESSION['password']);
+
+echo 'Deuxième affichage de la session: <br />';
+echo '<pre>'; print_r($_SESSION); echo '</pre>';
+
+// pour détruire la session
+session_destroy(); // permet se supprimer la session,en revanche, il faut savoir que l'information session_destroy() est vu par l'interpréteur php, mise de coté puis exécutée uniquement à la fin du scipt en cours
+
+echo 'Troisième affichage de la session: <br />';
 echo '<pre>'; print_r($_SESSION); echo '</pre>';

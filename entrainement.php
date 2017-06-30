@@ -640,3 +640,12 @@ echo '<pre>'; var_dump($mon_objet_2); echo '</pre>';
 
 // pour voir les méthodes de l'objet
 echo '<pre>'; var_dump(get_class_methods($mon_objet_1)); echo '</pre>';
+
+// pour récupérer une propriété de l'objet
+echo $mon_objet_1->prenom . '<br>';
+// pour récupérer une propriété de l'objet
+echo $mon_objet_1->pays() . '<br>';
+
+// pour récupérer une propriété de l'objet
+$mon_objet_1->prenom = "Pierre";
+echo $mon_objet_1->prenom . '<br>';
