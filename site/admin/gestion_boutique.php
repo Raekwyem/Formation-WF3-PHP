@@ -114,7 +114,7 @@ if(isset($_POST['id_article']) && isset($_POST['reference']) && isset($_POST['ca
   }
 
   // récupértion de l'ancienne photo dans le cas d'une modification
-  if(isset($_GET['action']) && $_GET['action'] == "modifiction")
+  if(isset($_GET['action']) && $_GET['action'] == "modification")
   {
   	if(isset($_POST['ancienne_photo']))
   	{
@@ -260,55 +260,7 @@ echo '<pre>'; print_r($_FILES); echo '</pre>';
 			echo '</div>';
 
 		}
-		?>
-		<!--
-      	<?php
-      	// affichage de tous les produits dans un tableau html
-      	// ex: couper la description si elle est trop longue
-      	// ex: afficher l'image dans une balise <img src="" />
-      	if(isset($_GET['action']) && $_GET['action'] == 'affichage'){
-      	?>
-		<div class="container">
-		  	<h2>Tous les produits</h2>
-         
-		  	<table class="table table-hover">
-		    	<thead>
-		      		<tr>
-		        		<th>id_article</th>
-		        		<th>Référence</th>
-		        		<th>Titre</th>
-		        		<th>Catégorie</th>
-		        		<th>Description</th>
-		        		<th>Photo</th>
-		        		<th>Sexe</th>
-		        		<th>Taille</th>
-		        		<th>Couleur</th>
-		        		<th>Stock</th>
-		        		<th>Prix</th>
-		      		</tr>
-		    	</thead>
-		    	<tbody>
-		      		<tr>
-		        		<td>John</td>
-		        		<td>Doe</td>
-		        		<td>john@example.com</td>
-		      		</tr>
-		      		<tr>
-				        <td>Mary</td>
-				        <td>Moe</td>
-				        <td>mary@example.com</td>
-		      		</tr>
-		      		<tr>
-				        <td>July</td>
-				        <td>Dooley</td>
-				        <td>july@example.com</td>
-		      		</tr>
-		    	</tbody>
-		  	</table>
-		</div>
-      	<?php }
-    	?>-->
-		<?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')){ ?>
+		if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')){?>
 
     	<div class="row">
         	<div class="col-sm-4 col-sm-offset-4">

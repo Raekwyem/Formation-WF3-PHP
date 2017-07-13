@@ -43,6 +43,8 @@ array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND =>
 // $resultat = $pdo->exec("INSERT INTO employes (prenom, nom, sexe, service, salaire, date_embauche) VALUES ('prenomtest', 'nomtest', 'm', 'informatique', 2000, '2017-06-22')");
 // echo "nombre de lignes insérées par la dernière requête: " . $resultat . '<br>';
 // echo '<pre>'; var_dump($resultat); echo '</pre>';
+// pour récupérer le dernier id inséré:
+// echo $pdo->lastInsertId();
 
 // 3 - PDO: QUERY => SELECT + FETCH (pour un seul resultat)
 $resultat = $pdo->query("SELECT * FROM employes WHERE id_employes=350");

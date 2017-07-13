@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="boutique.php">Ma Boutique</a>
+      <a class="navbar-brand" href="<?php echo URL; ?>boutique.php">Ma Boutique</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -41,7 +41,7 @@
             echo '<ul class="dropdown-menu">';
             
             echo '<li><a href="' . URL . 'admin/gestion_boutique.php">Gestion boutique</a></li>';
-            echo '<li><a href="' . URL . 'admin/gestion_commande.php">Gestion commande</a></li>';
+            echo '<li><a href="' . URL . 'admin/gestion_commandes.php">Gestion commandes</a></li>';
             echo '<li><a href="' . URL . 'admin/gestion_utilisateur.php">Gestion utilisateur</a></li>';
             
             echo '</ul></li>';
